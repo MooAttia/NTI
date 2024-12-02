@@ -1,11 +1,568 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ga+Maamli&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Satisfy&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="Css/all.min.css">
+    <link rel="stylesheet" href="Css/style.css">
 </head>
+
 <body>
-    
+
+
+    <div class="second-col pt-10">
+        <div class="container pt-10 d-flex head">
+            <div class="w-30 mb-10">
+                <label>Country: </label>
+                <select name="country">
+                    <option value="Eg">Egypt</option>
+                    <option value="Pl">Plastine</option>
+                    <option value="Sw">Sweden</option>
+                </select>
+                <label>Language: </label>
+                <select name="lang">
+                    <option value="Ar">Arabic</option>
+                    <option value="English">English</option>
+                    <option value="It">Italian</option>
+                </select>
+                <label>Currency: </label>
+                <select name="currency">
+                    <option value="dollar">$</option>
+                    <option value="euro">€ </option>
+                    <option value="yen">¥</option>
+                </select>
+            </div>
+            <div class="d-flex w-40">
+                <p class="border-r px-10 phone"><i class="fa-solid fa-phone-flip mr-5"></i> +32 (0) 15 28 76 67</p>
+                <p class="border-r px-10"><i class="fa-regular fa-envelope mr-5"></i> Messages</p>
+                <p><i class="fa-regular fa-circle-user mr-5"></i> Username Surname</p>
+            </div>
+            <div class="messages">12</div>
+        </div>
+    </div>
+
+    <div>
+        <div class="container search d-flex mt-30">
+            <h2>Commerce</h2>
+            <input type="text" class="icon" value placeholder="Search by product or SKU">
+            <button>Quick Order Form</button>
+        </div>
+    </div>
+    <div class="mt-20 second-col categ ">
+        <div class="container d-flex icons ">
+            <div class="d-flex w-50  icons">
+                <select class="fs-14" name="categories">
+                    <option value="HG">HOME&GARDEN</option>
+                    <option value="Pl">Plastine</option>
+                    <option value="Sw">Sweden</option>
+                </select>
+                <select class="fs-14" name="MOTORS">
+                    <option value="MT">MOTORS</option>
+                    <option value="English">English</option>
+                    <option value="It">Italian</option>
+                </select>
+                <p class="fs-14">ELECTRONICS</p>
+                <p class="fs-14">OFFICE EQUIPMENT</p>
+            </div>
+            <div class="d-flex line pt-10">
+                <div class="notifications pos-rel">
+                    <img class="img-icon" src="Images/vector/compare@2x.png" alt="">
+                    <p class="mt-10 fs-14">COMPARE</p>
+                    <div class=" single">3</div>
+                </div>
+                <div class="notifications pos-rel">
+                    <i class="fa-regular fa-star "></i>
+                    <p class="mt-10 fs-14">FAVOURITES</p>
+                    <div class=" single">7</div>
+                </div>
+                <div class="notifications pos-rel">
+                    <i class="fa-solid fa-cart-shopping "></i>
+                    <p class="mt-10 fs-14">CART</p>
+                    <span>ACTIVE CART NAME</span>
+                    <div class="messages">45</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="container py-30">
+            <div class="d-flex jc-sbt my-20">
+                <h3>Our brands</h3>
+                <a href="#">Show all brands <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div class="container brands">
+            <div class=" d-flex jc-sbt ">
+                <div class="logo ml-15">
+                    <img src="Images/Brands/huawei.png" alt="">
+                </div>
+                <div class="logo">
+                    <img src="Images/Brands/image (1).png" alt="">
+                </div>
+                <div class="logo">
+                    <img src="Images/Brands/pansonic.png" alt="">
+                </div>
+                <div class="logo mr-20">
+                    <img src="Images/Brands/sharp.png" alt="">
+                </div>
+            </div>
+            <div class="d-flex my-20 slider-dots">
+                <div class="selected-dot mr-10"></div>
+                <div class="dot mr-10"></div>
+                <div class="dot"></div>
+            </div>
+            <div><i class="fa-solid fa-chevron-left"></i></div>
+            <div><i class="fa-solid fa-chevron-right"></i></div>
+        </div>
+    </div>
+
+    <section class="my-20 cards-sec">
+        <div class="container">
+            <div class="d-flex jc-sbt my-20">
+                <h3>Recommended Products</h3>
+                <a href="#">Show all recommended products <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="d-flex mt-30 ps-rel">
+                <div class="w-25 product-card">
+                    <div class="card-img"><img src="Images/Products/93ebef9e3367669a5098be1744fa3b0f.png" alt=""></div>
+                    <div class="px-10">
+                        <span class="card-note">Omnires | Part No. 2123532</span>
+                        <h4>Connection with a handle <br> Omnires round</h4>
+                        <p class="mb-10">Material of execution: brass</p>
+                        <p class="mb-10">Manufacturer’s color: chrome</p>
+                        <p class="mb-10">Guarantee: 5 years</p>
+                        <p class="mb-10 price-text">your price <span class="price">$ 45.00</span> net <span
+                                class="sale-price"> $ 55.00</span></p>
+                        <div class="card-footer ">
+                            <input type="text" placeholder="1">
+                            <select name="country">
+                                <option value="it">Item</option>
+                                <option value="Pl">Plastine</option>
+                                <option value="Sw">Sweden</option>
+                            </select>
+                        </div>
+                        <div class="btn">
+                            <button>Add to cart <i class="fa-solid fa-angle-down"></i></button>
+                        </div>
+                    </div>
+                    <div class="sale-percentage">-30%</div>
+                    <div class="star-icom"><i class="fa-regular fa-star"></i></div>
+                    <div class="double-icons">
+                        <img id="card-compare" src="Images/vector/compare@2x.png" alt="">
+                        <i class="fa-solid fa-share-nodes py-20 fa-lg"></i>
+                    </div>
+                    <div class="stock-check"><i class="fa-regular fa-circle-check"></i> In stock</div>
+                </div>
+                <div class="w-25 product-card">
+                    <div class="card-img"><img src="Images/Products/93ebef9e3367669a5098be1744fa3b0f.png" alt=""></div>
+                    <div class="px-10">
+                        <span class="card-note">Omnires | Part No. 2123532</span>
+                        <h4>Connection with a handle <br> Omnires round</h4>
+                        <p class="mb-10">Material of execution: brass</p>
+                        <p class="mb-10">Manufacturer’s color: chrome</p>
+                        <p class="mb-10">Guarantee: 5 years</p>
+                        <p class="mb-10 price-text">your price <span class="price">$ 45.00</span> net <span
+                                class="sale-price"> $ 55.00</span></p>
+                        <div class="card-footer ">
+                            <input type="text" placeholder="1">
+                            <select name="country">
+                                <option value="it">Item</option>
+                                <option value="Pl">Plastine</option>
+                                <option value="Sw">Sweden</option>
+                            </select>
+                        </div>
+                        <div class="btn">
+                            <button>Add to cart <i class="fa-solid fa-angle-down"></i></button>
+                        </div>
+                    </div>
+                    <div class="sale-percentage">-30%</div>
+                    <div class="star-icom"><i class="fa-regular fa-star"></i></div>
+                    <div class="double-icons">
+                        <img id="card-compare" src="Images/vector/compare@2x.png" alt="">
+                        <i class="fa-solid fa-share-nodes py-20 fa-lg"></i>
+                    </div>
+                    <div class="stock-check"><i class="fa-regular fa-circle-check"></i> In stock</div>
+                </div>
+                <div class="w-25 product-card ">
+                    <div class="card-img"><img src="Images/Products/93ebef9e3367669a5098be1744fa3b0f.png" alt=""></div>
+                    <div class="px-10">
+                        <span class="card-note">Omnires | Part No. 2123532</span>
+                        <h4>Connection with a handle <br> Omnires round</h4>
+                        <p class="mb-10">Material of execution: brass</p>
+                        <p class="mb-10">Manufacturer’s color: chrome</p>
+                        <p class="mb-10">Guarantee: 5 years</p>
+                        <p class="mb-10 price-text">your price <span class="price">$ 45.00</span> net <span
+                                class="sale-price"> $ 55.00</span></p>
+                        <div class="card-footer ">
+                            <input type="text" placeholder="1">
+                            <select name="country">
+                                <option value="it">Item</option>
+                                <option value="Pl">Plastine</option>
+                                <option value="Sw">Sweden</option>
+                            </select>
+                        </div>
+                        <div class="btn">
+                            <button>Add to cart <i class="fa-solid fa-angle-down"></i></button>
+                        </div>
+                    </div>
+                    <div class="sale-percentage">-30%</div>
+                    <div class="star-icom"><i class="fa-regular fa-star"></i></div>
+                    <div class="double-icons">
+                        <img id="card-compare" src="Images/vector/compare@2x.png" alt="">
+                        <i class="fa-solid fa-share-nodes py-20 fa-lg"></i>
+                    </div>
+                    <div class="stock-check"><i class="fa-regular fa-circle-check"></i> In stock</div>
+                </div>
+                <div id="last" class="w-25 product-card ">
+                    <div class="card-img"><img src="Images/Products/93ebef9e3367669a5098be1744fa3b0f.png" alt=""></div>
+                    <div class="px-10">
+                        <span class="card-note">Omnires | Part No. 2123532</span>
+                        <h4>Connection with a handle <br> Omnires round</h4>
+                        <p class="mb-10">Material of execution: brass</p>
+                        <p class="mb-10">Manufacturer’s color: chrome</p>
+                        <p class="mb-10">Guarantee: 5 years</p>
+                        <p class="mb-10 price-text">your price <span class="price">$ 45.00</span> net <span
+                                class="sale-price"> $ 55.00</span></p>
+                        <div class="card-footer ">
+                            <input type="text" placeholder="1">
+                            <select name="country">
+                                <option value="it">Item</option>
+                                <option value="Pl">Plastine</option>
+                                <option value="Sw">Sweden</option>
+                            </select>
+                        </div>
+                        <div class="btn">
+                            <button>Add to cart <i class="fa-solid fa-angle-down"></i></button>
+                        </div>
+                    </div>
+                    <div class="sale-percentage">-30%</div>
+                    <div class="star-icom"><i class="fa-regular fa-star"></i></div>
+                    <div class="double-icons">
+                        <img id="card-compare" src="Images/vector/compare@2x.png" alt="">
+                        <i class="fa-solid fa-share-nodes py-20 fa-lg"></i>
+                    </div>
+                    <div class="stock-check"><i class="fa-regular fa-circle-check"></i> In stock</div>
+                </div>
+                <div class="scroll-btn"><i class="fa-solid fa-arrow-right"></i></div>
+            </div>
+        </div>
+    </section>
+
+    <div class="offer-back">
+        <div class="container d-flex offer">
+            <div class="tool d-flex">
+                <img src="Images/vector/2f76f6d41a7a5d0139b58cd37f50d935.png" alt="">
+                <p><span>-20 % </span> on power tools</p>
+            </div>
+            <div>
+                <button>Check offer</button>
+            </div>
+        </div>
+    </div>
+
+    <section class="py-20">
+        <div class="container py-30">
+            <div class="d-flex jc-sbt my-20 py-30">
+                <h3>Recommended Categories</h3>
+                <a href="#">Show all categories <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="d-flex">
+                <div class="categories-card w-25 mr-20">
+                    <div>
+                        <img src="Images/vector/3b9aa9f1e13fd7bb842f7b1dea065ce9.jpg" alt="">
+                    </div>
+                    <div class="categories-title ">
+                        <p>ELECTRONICS</p>
+                    </div>
+                </div>
+
+                <div class=" categories-card w-25 mr-20">
+                    <div>
+                        <img src="Images/vector/3b9aa9f1e13fd7bb842f7b1dea065ce9.jpg" alt="">
+                    </div>
+                    <div class="categories-title">
+                        <p>ELECTRONICS</p>
+                    </div>
+                </div>
+                <div class=" categories-card w-25 mr-20">
+                    <div>
+                        <img src="Images/vector/3b9aa9f1e13fd7bb842f7b1dea065ce9.jpg" alt="">
+                    </div>
+                    <div class="categories-title">
+                        <p>ELECTRONICS</p>
+                    </div>
+                </div>
+                <div class="categories-card w-25">
+                    <div>
+                        <img src="Images/vector/3b9aa9f1e13fd7bb842f7b1dea065ce9.jpg" alt="">
+                    </div>
+                    <div class="categories-title">
+                        <p>ELECTRONICS</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="d-flex jc-sbt my-20 py-20">
+                <h3>Hints for you</h3>
+                <a href="#">Show all hints <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="d-flex">
+                <div class="hints-card w-25 mr-20">
+                    <div>
+                        <img src="Images/vector/3b9aa9f1e13fd7bb842f7b1dea065ce9.jpg" alt="">
+                    </div>
+                    <div class="hints-title ">
+                        <h4>How much does it cost to <br> finish an apartment?</h4>
+                        <p>Are you standing on the threshold of your own "M", to which you have just picked up the keys,
+                            and with the eye...</p>
+                        <a href="#">Read more <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class=" hints-card w-25 mr-20">
+                    <div>
+                        <img src="Images/vector/3b9aa9f1e13fd7bb842f7b1dea065ce9.jpg" alt="">
+                    </div>
+                    <div class="hints-title">
+                        <h4>How much does it cost to <br> finish an apartment?</h4>
+                        <p>Are you standing on the threshold of your own "M", to which you have just picked up the keys,
+                            and with the eye...</p>
+                        <a href="#">Read more <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class=" hints-card w-25 mr-20">
+                    <div>
+                        <img src="Images/vector/3b9aa9f1e13fd7bb842f7b1dea065ce9.jpg" alt="">
+                    </div>
+                    <div class="hints-title">
+                        <h4>How much does it cost to <br> finish an apartment?</h4>
+                        <p>Are you standing on the threshold of your own "M", to which you have just picked up the keys,
+                            and with the eye...</p>
+                        <a href="#">Read more <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="hints-card w-25">
+                    <div>
+                        <img src="Images/vector/3b9aa9f1e13fd7bb842f7b1dea065ce9.jpg" alt="">
+                    </div>
+                    <div class="hints-title">
+                        <h4>How much does it cost to <br> finish an apartment?</h4>
+                        <p>Are you standing on the threshold of your own "M", to which you have just picked up the keys,
+                            and with the eye...</p>
+                        <a href="#">Read more <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <div class="py-30">
+        <div class="container d-flex py-30">
+            <div class="first-half w-50">
+            </div>
+            <div class="sec-half w-50">
+                <div class="box">
+                    <h4>Buy this bundle and save $100!</h4>
+                    <p>Longer sentence, for just two lines </p>
+                    <p>and it could be very very long</p>
+                    <button>Buy this bundle</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="container d-flex py-30">
+            <div class="w-33 one">
+                <div class="w-50 two d-flex">
+                    <p>New tool kits!</p>
+                </div>
+            </div>
+            <div class="w-33 one">
+                <div class="w-50 two d-flex">
+                    <p>New tool kits!</p>
+                </div>
+            </div>
+            <div id="end" class="w-33 one">
+                <div class="w-50 two d-flex">
+                    <p>New tool kits!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="delivery-back my-40">
+        <div class="container d-flex ">
+            <div class="w-50 delivery-txt">
+                <h4>DPD delivery already available!</h4>
+                <p class="mb-10">Choose DPD for speed, ease and convenience. </p>
+                <p class="mb-10">Track your parcel in real time. This will help you plan </p>
+                <p class="mb-10">your work while waiting for the parcel.</p>
+                <button class="my-40">Show more</button>
+            </div>
+            <div class="w-50 van-img">
+                <img src="Images/vector/van.png" alt="">
+            </div>
+        </div>
+    </div>
+    <section class="py-20">
+        <div class="container py-20">
+            <div class="d-flex jc-sbt my-20 py-30">
+                <h3>Events for you</h3>
+                <a href="#">Show all events <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="d-flex">
+                <div class="w-25 event-card product-card">
+                    <div class="event-img"><img src="Images/vector/events.jpg" alt=""></div>
+                    <div class="px-10">
+                        <h4>Electrician course for <br> electricians with SEP licence</h4>
+                        <span class="events-note ">23.05.2021 | London, UK</span>
+                        <p class="mb-10 mt-20">Material of execution: brass</p>
+                        <p class="mb-10">Manufacturer’s color: chrome</p>
+                        <p class="mb-10">Guarantee: 5 years</p>
+                        <div class="events-btn">
+                            <button>Know more</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="w-25 event-card product-card">
+                    <div class="event-img"><img src="Images/vector/events.jpg" alt=""></div>
+                    <div class="px-10">
+                        <h4>Electrician course for <br> electricians with SEP licence</h4>
+                        <span class="events-note ">23.05.2021 | London, UK</span>
+                        <p class="mb-10 mt-20">Material of execution: brass</p>
+                        <p class="mb-10">Manufacturer’s color: chrome</p>
+                        <p class="mb-10">Guarantee: 5 years</p>
+                        <div class="events-btn">
+                            <button>Know more</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="w-25 event-card product-card">
+                    <div class="event-img"><img src="Images/vector/events.jpg" alt=""></div>
+                    <div class="px-10">
+                        <h4>Electrician course for <br> electricians with SEP licence</h4>
+                        <span class="events-note ">23.05.2021 | London, UK</span>
+                        <p class="mb-10 mt-20">Material of execution: brass</p>
+                        <p class="mb-10">Manufacturer’s color: chrome</p>
+                        <p class="mb-10">Guarantee: 5 years</p>
+                        <div class="events-btn">
+                            <button>Know more</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="w-25 event-card product-card">
+                    <div class="event-img"><img src="Images/vector/events.jpg" alt=""></div>
+                    <div class="px-10">
+                        <h4>Electrician course for <br> electricians with SEP licence</h4>
+                        <span class="events-note ">23.05.2021 | London, UK</span>
+                        <p class="mb-10 mt-20">Material of execution: brass</p>
+                        <p class="mb-10">Manufacturer’s color: chrome</p>
+                        <p class="mb-10">Guarantee: 5 years</p>
+                        <div class="events-btn">
+                            <button>Know more</button>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </section>
+    <footer class="py-20">
+        <div class="container">
+            <div class=" d-flex cont">
+                <div class="w-30 signup">
+                    <h5>Sign up for news</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    <input class="email" type="email" name="email" placeholder="Your emial address">
+                    <button>Sign up for newsteller</button>
+                    <div class="agreement">
+                        <input class="mt-20" type="checkbox">
+                        <p> I accept <span>the personal data managment.</span></p>
+                    </div>
+                </div>
+                <div class="w-30 d-flex how-to-buy">
+                    <div>
+                        <h5>How to buy</h5>
+                        <ul>
+                            <li class="mb-10">Lorem, ipsum.</li>
+                            <li class="mb-10">Lorem, ipsum.</li>
+                            <li class="mb-10">Lorem, ipsum.</li>
+                            <li class="mb-10">Lorem, ipsum.</li>
+                            <li class="mb-10">Lorem, ipsum.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h5>Help</h5>
+                        <ul>
+                            <li class="mb-10">Lorem, ipsum.</li>
+                            <li class="mb-10">Lorem, ipsum.</li>
+                            <li class="mb-10">Lorem, ipsum.</li>
+                            <li class="mb-10">Lorem, ipsum.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="w-30 d-flex how-to-buy">
+                    <div>
+                        <h5>How to buy</h5>
+                        <ul>
+                            <li class="mb-10">Lorem, ipsum.</li>
+                            <li class="mb-10">Lorem, ipsum.</li>
+                            <li class="mb-10">Lorem, ipsum.</li>
+                            <li class="mb-10">Lorem, ipsum.</li>
+                            <li class="mb-10">Lorem, ipsum.</li>
+                            <li class="mb-10">Lorem, ipsum.</li>
+                            <li class="mb-10">Lorem, ipsum.</li>
+                            <li class="mb-10">Lorem, ipsum.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h5>Help</h5>
+                        <ul>
+                            <li class="mb-10">Lorem, ipsum.</li>
+                            <li class="mb-10">Lorem, ipsum.</li>
+                            <li class="mb-10">Lorem, ipsum.</li>
+                            <li class="mb-10">Lorem, ipsum.</li>
+                            <li class="mb-10">Lorem, ipsum.</li>
+                            <li class="mb-10">Lorem, ipsum.</li>
+                            <li class="mb-10">Lorem, ipsum.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex social-copy">
+                <p><i class="fa-regular fa-copyright"></i> 2021 Divante S.A.</p>
+                <div class="social-icons">
+                    <i class="fa-brands fa-facebook-f mr-10"></i>
+                    <i class="fa-brands fa-instagram mr-10"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
